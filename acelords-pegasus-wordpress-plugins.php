@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
- * Plugin URI: https://store.acelords.space/acelords-pegasus-plugins
+ * Plugin URI: https://github.com/acelords/acelords-pegasus-plugins
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.0.2
+ * Version: 1.0.4
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -99,7 +99,7 @@ if( ! class_exists( 'AceLords_Pegasus_WordPress_Plugin_Updater' ) ){
 }
 
 $updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
-$updater->set_username( 'lexxyungcarter' );
+$updater->set_username( 'acelords' );
 $updater->set_repository( 'pegasus-wordpress-plugin' );
-//$updater->authorize( 'a943e96cf6a9a1360978ea9fbb6c82bf7704d08d' ); // Your auth code goes here for private repos
+//$updater->authorize( 'KEY' ); // Your auth code goes here for private repos
 $updater->initialize();
