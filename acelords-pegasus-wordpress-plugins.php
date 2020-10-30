@@ -3,7 +3,7 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://store.acelords.space/acelords-pegasus-plugins
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
