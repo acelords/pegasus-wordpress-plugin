@@ -91,3 +91,15 @@ if( !function_exists("acelords_pegasus_wordpress_plugins_page") ) {
     });
 }
 
+/**
+ * Plugin Updater
+ */
+if( ! class_exists( 'AceLords_Pegasus_WordPress_Plugin_Updater' ) ){
+    include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+}
+
+$updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
+$updater->set_username( 'lexxyungcarter' );
+$updater->set_repository( 'pegasus-wordpress-plugin' );
+$updater->authorize( 'a943e96cf6a9a1360978ea9fbb6c82bf7704d08d' ); // Your auth code goes here for private repos
+$updater->initialize();
