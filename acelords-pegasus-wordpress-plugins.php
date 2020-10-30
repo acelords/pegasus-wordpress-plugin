@@ -3,7 +3,7 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/acelords-pegasus-plugins
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.0.5
+ * Version: 1.0.6
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -52,7 +52,7 @@ function acelords_pegasus_plugins_enqueue_scripts() {
 add_action('wp_enqueue_scripts', 'acelords_pegasus_plugins_enqueue_scripts');
 
 // Admin Section
-if( !function_exists("acelords_pegasus_wordpress_plugins_page") ) {
+if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 
     function acelords_pegasus_wordpress_plugins_page($content) {
         echo '<div id="acelords-pegasus-wordpress-plugins-admin"></div>';
@@ -94,12 +94,17 @@ if( !function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 /**
  * Plugin Updater
  */
-if( ! class_exists( 'AceLords_Pegasus_WordPress_Plugin_Updater' ) ){
-    include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
-}
+//if( ! class_exists( 'AceLords_Pegasus_WordPress_Plugin_Updater' ) ) {
+//    include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
+//}
 
-$updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
-$updater->set_username( 'acelords' );
-$updater->set_repository( 'pegasus-wordpress-plugin' );
-//$updater->authorize( 'SECRET_KEY' ); // Your auth code goes here for private repos
-$updater->initialize();
+
+require_once( 'AceLordsGitHubPluginUpdater.php' );
+if ( is_admin() ) {
+    new AceLordsGitHubPluginUpdater( __FILE__, 'acelords', "pegasus-wordpress-plugin" );
+}
+//$updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
+//$updater->set_username( 'acelords' );
+//$updater->set_repository( 'pegasus-wordpress-plugin' );
+////$updater->authorize( 'SECRET_KEY' ); // Your auth code goes here for private repos
+//$updater->initialize();

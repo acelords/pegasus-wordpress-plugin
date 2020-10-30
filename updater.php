@@ -46,6 +46,7 @@ class AceLords_Pegasus_WordPress_Plugin_Updater
     }
 
     private function get_repository_info() {
+        die($this->github_response);
         if ( is_null( $this->github_response ) ) { // Do we have a response?
             $request_uri = sprintf( 'https://api.github.com/repos/%s/%s/releases', $this->username, $this->repository ); // Build URI
 
@@ -74,6 +75,8 @@ class AceLords_Pegasus_WordPress_Plugin_Updater
     }
 
     public function modify_transient( $transient ) {
+        die("mjuin");
+        die(is_null($this->github_response));
 
         if( property_exists( $transient, 'checked') ) { // Check if transient has a checked property
 
