@@ -3,7 +3,7 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/acelords-pegasus-plugins
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.0.6
+ * Version: 1.0.7
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -98,13 +98,13 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 //    include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 //}
 
-
-require_once( 'AceLordsGitHubPluginUpdater.php' );
-if ( is_admin() ) {
-    new AceLordsGitHubPluginUpdater( __FILE__, 'acelords', "pegasus-wordpress-plugin" );
-}
 //$updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
 //$updater->set_username( 'acelords' );
 //$updater->set_repository( 'pegasus-wordpress-plugin' );
 ////$updater->authorize( 'SECRET_KEY' ); // Your auth code goes here for private repos
 //$updater->initialize();
+
+require_once( 'AceLordsGitHubPluginUpdater.php' );
+if ( is_admin() ) {
+    new AceLordsGitHubPluginUpdater( __FILE__, 'acelords', "pegasus-wordpress-plugin" );
+}
