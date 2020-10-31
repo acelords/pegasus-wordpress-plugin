@@ -92,19 +92,17 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 }
 
 /**
- * Plugin Updater
+ * plugin updater
  */
-//if( ! class_exists( 'AceLords_Pegasus_WordPress_Plugin_Updater' ) ) {
-//    include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
-//}
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/acelords/pegasus-wordpress-plugin.git',
+    __FILE__,
+    'acelords-pegasus-wordpress-plugins'
+);
 
-//$updater = new AceLords_Pegasus_WordPress_Plugin_Updater( __FILE__ );
-//$updater->set_username( 'acelords' );
-//$updater->set_repository( 'pegasus-wordpress-plugin' );
-////$updater->authorize( 'SECRET_KEY' ); // Your auth code goes here for private repos
-//$updater->initialize();
+//Optional: If you're using a private repository, specify the access token like this:
+//$myUpdateChecker->setAuthentication('your-token-here');
 
-require_once( 'AceLordsGitHubPluginUpdater.php' );
-if ( is_admin() ) {
-    new AceLordsGitHubPluginUpdater( __FILE__, 'acelords', "pegasus-wordpress-plugin" );
-}
+//Optional: Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
