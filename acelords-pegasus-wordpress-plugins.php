@@ -3,7 +3,7 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/acelords-pegasus-plugins
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.0.7
+ * Version: 1.0.9
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -101,8 +101,8 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'acelords-pegasus-wordpress-plugins'
 );
 
-//Optional: If you're using a private repository, specify the access token like this:
-//$myUpdateChecker->setAuthentication('your-token-here');
+// Optional: If you're using a private repository, specify the access token like this:
+// $myUpdateChecker->setAuthentication('your-token-here');
 
 //Optional: Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
