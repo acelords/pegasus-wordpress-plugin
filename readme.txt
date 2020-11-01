@@ -40,7 +40,7 @@ Answer to foo bar dilemma.
 
 == Changelog ==
 
-= 1.1.3 =
+= 1.1.4 =
 * Added Pricing (TailWind) Plugin
 
 = 1.1.1 =
