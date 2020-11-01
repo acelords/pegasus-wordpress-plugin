@@ -40,6 +40,9 @@ Answer to foo bar dilemma.
 
 == Changelog ==
 
+= 1.1.2 =
+* Added Pricing (TailWind) Plugin
+
 = 1.1.1 =
 * Security Updates
 
