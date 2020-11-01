@@ -1,12 +1,12 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.1.12",
+	"version": "1.1.8",
 	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
-	"requires": "5.0",
-	"tested": "5.5.3",
-	"last_updated": "2020-11-01 21:33:00",
+	"requires": "4.5",
+	"tested": "4.8",
+	"last_updated": "2020-11-01 21:02:00",
 	"upgrade_notice": "Here's why you should upgrade...New available plugins",
 
 	"author": "AceLords",
@@ -16,7 +16,7 @@
 		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at\ncomplementing AceLords' Project Pegasus\nWordPress Plugins for complementing AceLords' Project Pegasus",
 		"installation": "(Recommended) Installation instructions.",
 		"changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
-		"available_plugins": "1. OceanWP Home Order Form 2. Pricing Widget"
+		"available_plugins": "1. OceanWP Home Order Form \n2. Pricing Widget"
 	},
 	
 	"icons" : {
