@@ -8,6 +8,9 @@ AceLords plugin to complement AceLords' project pegasus project.
 - AceLords Proprietary License
 
 # Changelog 
+### 1.1.7
+* Refactored plugin updater method
+
 ### 1.1.6
 * Added Pricing (TailWind) Plugin
 

@@ -1,22 +1,22 @@
 {
-	"name": "My Example Plugin",
-	"version": "2.0",
-	"download_url": "http://example.com/updates/example-plugin.zip",
+	"name": "AceLords Project Pegasus WordPress Plugins",
+	"version": "1.1.7",
+	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/pegasus-wordpress-plugin.zip",
 
-	"homepage": "http://example.com/",
+	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "4.5",
 	"tested": "4.8",
-	"last_updated": "2017-01-01 16:17:00",
-	"upgrade_notice": "Here's why you should upgrade...",
+	"last_updated": "2020-11-01 21:02:00",
+	"upgrade_notice": "Here's why you should upgrade...New available plugins",
 
-	"author": "Janis Elsts",
-	"author_homepage": "http://example.com/",
+	"author": "AceLords",
+	"author_homepage": "https://acelords.space/",
 
 	"sections": {
-		"description": "(Required) Plugin description. Basic HTML can be used in all sections.",
+		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at\ncomplementing AceLords' Project Pegasus\nWordPress Plugins for complementing AceLords' Project Pegasus",
 		"installation": "(Recommended) Installation instructions.",
 		"changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
-		"custom_section": "This is a custom section labeled 'Custom Section'."
+		"available_plugins": "1. OceanWP Home Order Form \n2. Pricing Widget"
 	},
 	
 	"icons" : {
@@ -25,28 +25,16 @@
     },
 
 	"banners": {
-		"low": "http://w-shadow.com/files/external-update-example/assets/banner-772x250.png",
-		"high": "http://w-shadow.com/files/external-update-example/assets/banner-1544x500.png"
+		"low": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/assets/screenshot-1.jpg",
+		"high": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/assets/screenshot-1.jpg"
 	},
 
 	"translations": [
-		{
-			"language": "fr_FR",
-			"version": "4.0",
-			"updated": "2016-04-22 23:22:42",
-			"package": "http://example.com/updates/translations/french-language-pack.zip"
-		},
-		{
-			"language": "de_DE",
-			"version": "5.0",
-			"updated": "2016-04-22 23:22:42",
-			"package": "http://example.com/updates/translations/german-language-pack.zip"
-		}
 	],
 
 	"rating": 90,
 	"num_ratings": 123,
 
-	"downloaded": 1234,
-	"active_installs": 12345
+	"downloaded": 12,
+	"active_installs": 12
 }

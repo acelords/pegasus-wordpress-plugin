@@ -1,9 +1,9 @@
 <?php
 /*
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
- * Plugin URI: https://github.com/acelords/acelords-pegasus-plugins
+ * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.1.6
+ * Version: 1.1.7
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -96,13 +96,7 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/acelords/pegasus-wordpress-plugin.git',
-    __FILE__,
+    'https://github.com/acelords/pegasus-wordpress-plugin/raw/master/plugin-update-checker/examples/plugin.json',
+    __FILE__, // Full path to the main plugin file or functions.php.
     'acelords-pegasus-wordpress-plugins'
 );
-
-// Optional: If you're using a private repository, specify the access token like this:
-// $myUpdateChecker->setAuthentication('your-token-here');
-
-//Optional: Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('master');
