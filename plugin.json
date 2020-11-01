@@ -1,12 +1,12 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.1.12",
+	"version": "1.1.13",
 	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "5.0",
 	"tested": "5.5.3",
-	"last_updated": "2020-11-01 21:33:00",
+	"last_updated": "2020-11-01 23:33:00",
 	"upgrade_notice": "Here's why you should upgrade...New available plugins",
 
 	"author": "AceLords",
