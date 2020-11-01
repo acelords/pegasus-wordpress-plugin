@@ -3,7 +3,7 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.1.7
+ * Version: 1.1.8
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
@@ -96,7 +96,7 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/acelords/pegasus-wordpress-plugin/raw/master/plugin-update-checker/examples/plugin.json',
+    'https://github.com/acelords/pegasus-wordpress-plugin/raw/master/plugin.json',
     __FILE__, // Full path to the main plugin file or functions.php.
     'acelords-pegasus-wordpress-plugins'
 );
