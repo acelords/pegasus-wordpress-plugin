@@ -8,7 +8,7 @@ AceLords plugin to complement AceLords' project pegasus project.
 - AceLords Proprietary License
 
 # Changelog 
-### 1.1.10
+### 1.1.11
 * Refactored plugin updater method
 
 ### 1.1.6
