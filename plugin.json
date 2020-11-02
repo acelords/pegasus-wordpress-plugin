@@ -1,22 +1,22 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.1.15",
-	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins-1.1.15.zip",
+	"version": "1.1.16",
+	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins-1.1.16.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "5.0",
 	"tested": "5.5.3",
-	"last_updated": "2020-11-01 23:33:00",
-	"upgrade_notice": "Here's why you should upgrade...New available plugins",
+	"last_updated": "2020-11-02 10:33:00",
+	"upgrade_notice": "Here's why you should upgrade...New available plugins released every week!",
 
 	"author": "AceLords",
-	"author_homepage": "https://acelords.space/",
+	"author_homepage": "https://www.acelords.space/",
 
 	"sections": {
-		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at\ncomplementing AceLords' Project Pegasus\nWordPress Plugins for complementing AceLords' Project Pegasus",
-		"installation": "(Recommended) Installation instructions.",
-		"changelog": "(Recommended) Changelog. <p>This section will be displayed by default when the user clicks 'View version x.y.z details'.</p>",
-		"available_plugins": "1. OceanWP Home Order Form 2. Pricing Widget"
+		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at complementing AceLords' Project Pegasus WordPress Plugins for complementing AceLords' Project Pegasus",
+		"installation": "For first time installs and activation, you need to contact the developers prior. For subsequent installs(updates), click on the 'update now' button in the plugins page. Alternatively, you can head over to github and download the zipped file.",
+		"changelog": "Changelog. <p>1.1.16: Added Pricing Table</p> <p>1.0.3: Added OceanWP Home Order Form</p>",
+		"available_plugins": "<ol><li>OceanWP Home Order Form</li> <li>Pricing Widget</li></ul>"
 	},
 	
 	"icons" : {

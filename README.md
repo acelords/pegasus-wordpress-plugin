@@ -1,27 +1,21 @@
 # AceLords Pegasus WordPress Plugin
-AceLords plugin to complement AceLords' project pegasus project.
-
-## Contributing
-- [AceLords](https://www.acelords.space)
+AceLords Pegasus is a complete and complex freelancing-centered system aimed at complementing AceLords' Project Pegasus WordPress Plugins for complementing AceLords' Project Pegasus.
 
 ## License
 - AceLords Proprietary License
 
-# Changelog 
-### 1.1.15
-* Refactored plugin updater method
+## Available Plugins 
+1. OceanWP Home Page Order Widget
+2. Pricing Table (TailWind) Plugin
 
-### 1.1.6
-* Added Pricing (TailWind) Plugin
-
-### 1.1.1
-* Security Updates
-
-### 1.0.5
-* Added Pricing Table
-
-### 1.0.0
-* Added OceanWP Home Page Order Widget
+## Installation
+For first time installs and activation, you need to contact the developers before. 
+For subsequent installs(updates), click on the 'update now' button in the plugins page. 
+Alternatively, you can head over to github and download the zipped file.
 
 ## Contributing
-- [AceLords](https://acelords.space)
+- [AceLords](https://www.acelords.space)
+
+## Report Bugs
+- [AceLords Support Mail](mailto:support@acelords.space)
+- [AceLords Business Mail](mailto:info@acelords.space)
