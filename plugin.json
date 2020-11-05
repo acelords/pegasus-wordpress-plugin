@@ -1,7 +1,7 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.1.24",
-	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins-1.1.24.zip",
+	"version": "1.1.25",
+	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins-1.1.25.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "5.0",
