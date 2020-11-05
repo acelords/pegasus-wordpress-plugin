@@ -3,10 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.1.18
+ * Version: 1.1.19
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
+
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.1.19');
 
 /**
  * The constructor, to initiate the widget
@@ -36,15 +38,14 @@ add_shortcode('AceLordsPegasusPlugins', 'handle_shortcode');
 function acelords_pegasus_plugins_enqueue_scripts() {
     global $post;
     if(has_shortcode($post->post_content, "AceLordsPegasusPlugins")) {
-
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], '1.0', true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], '1.0', true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-app', plugin_dir_url( __FILE__ ) . 'public/js/app.js', [], '1.0', true);
+        
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-app', plugin_dir_url( __FILE__ ) . 'public/js/app.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
 
         wp_enqueue_style( 'tailwind-css', plugin_dir_url( __FILE__ ) . 'public/css/tailwind.css', [], '1.9.5' );
-        wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], '1.0.0' );
+        wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION );
         wp_enqueue_style( 'acelords-pegasus-plugin-google-fonts', 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap' );
-        wp_enqueue_style( 'acelords-pegasus-plugin-mdi-font', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css' );
         wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
 
     }
@@ -81,11 +82,11 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 
     // enqueue admin scripts
     add_action("admin_enqueue_scripts", function ($hook) {
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], '1.0', true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], '1.0', true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-admin-app', plugin_dir_url( __FILE__ ) . 'public/js/admin-app.js', [], '1.0', true);
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+        wp_enqueue_script( 'acelords-pegasus-plugin-js-admin-app', plugin_dir_url( __FILE__ ) . 'public/js/admin-app.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
 
-        wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], '1.0.0' );
+        wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION );
         wp_enqueue_style( 'tailwind-css', plugin_dir_url( __FILE__ ) . 'public/css/tailwind.css', [], '1.9.5' );
         wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
     });
