@@ -1,8 +1,7 @@
 # AceLords Pegasus WordPress Plugin
 AceLords Pegasus is a complete and complex freelancing-centered system aimed at complementing AceLords' Project Pegasus WordPress Plugins for complementing AceLords' Project Pegasus.
 
-## License
-- AceLords Proprietary License
+![Screenshot 1](assets/screenshot-2.jpg)
 
 ## Available Plugins 
 1. OceanWP Home Page Order Widget
@@ -18,6 +17,10 @@ Alternatively, you can head over to github and download the zipped file.
 
 ## Contributing
 - [AceLords](https://www.acelords.space)
+
+
+## License
+- AceLords Proprietary License
 
 ## Report Bugs
 - [AceLords Support Mail](mailto:support@acelords.space)
