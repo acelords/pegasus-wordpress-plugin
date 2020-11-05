@@ -8,6 +8,8 @@ AceLords Pegasus is a complete and complex freelancing-centered system aimed at 
 1. OceanWP Home Page Order Widget
 2. Pricing Table (TailWind) Plugin
 3. Order Page (ECH-OceanWP) Plugin
+4. Order Page (CEE-OceanWP) Plugin
+5. Order Page (ELW-OceanWP) Plugin
 
 ## Installation
 For first time installs and activation, you need to contact the developers before. 
