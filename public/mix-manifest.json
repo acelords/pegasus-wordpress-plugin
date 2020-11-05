@@ -1,8 +1,8 @@
 {
-    "/js/admin-app.js": "/js/admin-app.js",
-    "/css/app.css": "/css/app.css",
-    "/css/tailwind.css": "/css/tailwind.css",
-    "/js/app.js": "/js/app.js",
-    "/js/manifest.js": "/js/manifest.js",
-    "/js/vendor.js": "/js/vendor.js"
+    "/js/manifest.js": "/js/manifest.js?id=7db827d654313dce4250",
+    "/js/vendor.js": "/js/vendor.js?id=d1cf5324ba68185585f7",
+    "/js/admin-app.js": "/js/admin-app.js?id=a777194a8e2f68fa8bf7",
+    "/css/app.css": "/css/app.css?id=50f7ae24b4d03c52d2f6",
+    "/css/tailwind.css": "/css/tailwind.css?id=54420031840b53be5dce",
+    "/js/app.js": "/js/app.js?id=6c6abf72ce32c95077bd"
 }
