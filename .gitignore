@@ -17,7 +17,6 @@ yarn-error.log*
 *.sw?
 .phpstorm.meta.php
 _ide_helper.php
-.DS_Store
 
 /tests/e2e/videos/
 /tests/e2e/screenshots/
