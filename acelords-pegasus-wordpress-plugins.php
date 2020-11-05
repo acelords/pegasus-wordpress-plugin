@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.1.20
+ * Version: 1.1.21
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.1.20');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.1.21');
 
 /**
  * The constructor, to initiate the widget
@@ -82,13 +82,16 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 
     // enqueue admin scripts
     add_action("admin_enqueue_scripts", function ($hook) {
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
-        wp_enqueue_script( 'acelords-pegasus-plugin-js-admin-app', plugin_dir_url( __FILE__ ) . 'public/js/admin-app.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+        if(strpos($hook, "acelords-pegasus-wordpress-plugins") !== false) {
+            wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+            wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+            wp_enqueue_script( 'acelords-pegasus-plugin-js-admin-app', plugin_dir_url( __FILE__ ) . 'public/js/admin-app.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
+    
+            wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION );
+            wp_enqueue_style( 'tailwind-css', plugin_dir_url( __FILE__ ) . 'public/css/tailwind.css', [], '1.9.5' );
+            wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
+        }
 
-        wp_enqueue_style( 'acelords-pegasus-plugin-app-css', plugin_dir_url( __FILE__ ) . 'public/css/app.css', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION );
-        wp_enqueue_style( 'tailwind-css', plugin_dir_url( __FILE__ ) . 'public/css/tailwind.css', [], '1.9.5' );
-        wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
     });
 }
 
