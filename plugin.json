@@ -1,7 +1,7 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.2.0",
-	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wordpress-plugins-1.2.0.zip",
+	"version": "1.2.1",
+	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wp-1.2.1.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "5.0",
@@ -16,7 +16,7 @@
 		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at complementing AceLords' Project Pegasus WordPress Plugins for complementing AceLords' Project Pegasus",
 		"installation": "For first time installs and activation, you need to contact the developers prior. For subsequent installs(updates), click on the 'update now' button in the plugins page. Alternatively, you can head over to github and download the zipped file.",
 		"changelog": "Changelog. <p>1.1.20: Added (ELW + CEE) Order Pages OceanWP</p> <p>1.1.17: Added (ECH) Order Page OceanWP</p> <p>1.1.16: Added Pricing Table</p> <p>1.0.3: Added OceanWP Home Order Form</p>",
-		"available_plugins": "<ol><li>OceanWP Home Order Form</li> <li>Pricing Widget</li> <li>Order Form (ECH OceanWP)</li> <li>Order Form (ELW OceanWP)</li> <li>Order Form (CEE OceanWP)</li></ul>"
+		"available_plugins": "<ol><li>Home Order Form 1 (OceanWP)</li> <li>Pricing Table 1</li> <li>Order Form 1 (OceanWP)</li> <li>Order Form 2 (OceanWP)</li> <li>Order Form 3 (OceanWP)</li></ul>"
 	},
 	
 	"icons" : {
