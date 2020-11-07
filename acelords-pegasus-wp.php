@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.2.3
+ * Version: 1.2.4
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.3');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.4');
 
 /**
  * The constructor, to initiate the widget
@@ -82,7 +82,7 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 
     // enqueue admin scripts
     add_action("admin_enqueue_scripts", function ($hook) {
-        if(strpos($hook, "acelords-pegasus-wordpress-plugins") !== false) {
+        if(strpos($hook, "acelords-pegasus-wp") !== false) {
             wp_enqueue_script( 'acelords-pegasus-plugin-js-manifest', plugin_dir_url( __FILE__ ) . 'public/js/manifest.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
             wp_enqueue_script( 'acelords-pegasus-plugin-js-vendor', plugin_dir_url( __FILE__ ) . 'public/js/vendor.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);
             wp_enqueue_script( 'acelords-pegasus-plugin-js-admin-app', plugin_dir_url( __FILE__ ) . 'public/js/admin-app.js', [], ACELORDS_PEGASUS_WP_PLUGINS_VERSION, true);

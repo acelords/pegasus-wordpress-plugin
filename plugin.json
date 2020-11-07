@@ -1,12 +1,12 @@
 {
 	"name": "AceLords Project Pegasus WordPress Plugins",
-	"version": "1.2.3",
-	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wp-1.2.3.zip",
+	"version": "1.2.4",
+	"download_url": "https://github.com/acelords/pegasus-wordpress-plugin/raw/master/acelords-pegasus-wp-1.2.4.zip",
 
 	"homepage": "https://github.com/acelords/pegasus-wordpress-plugin",
 	"requires": "5.0",
 	"tested": "5.5.3",
-	"last_updated": "2020-11-02 10:33:00",
+	"last_updated": "2020-11-08 00:30:00",
 	"upgrade_notice": "Here's why you should upgrade...New available plugins released every week!",
 
 	"author": "AceLords",
@@ -15,7 +15,7 @@
 	"sections": {
 		"description": "AceLords Pegasus is a complete and complex freelancing-centered system aimed at complementing AceLords' Project Pegasus WordPress Plugins for complementing AceLords' Project Pegasus",
 		"installation": "For first time installs and activation, you need to contact the developers prior. For subsequent installs(updates), click on the 'update now' button in the plugins page. Alternatively, you can head over to github and download the zipped file.",
-		"changelog": "Changelog. <p>1.1.20: Added 2 Order Forms OceanWP</p> <p>1.1.17: Added 1 Order Form OceanWP</p> <p>1.1.16: Added Pricing Table</p> <p>1.0.3: Added Home Order Form - OceanWP</p>",
+		"changelog": "Changelog. <p>1.2.4: Renamed all plugins</p> <p>1.1.20: Added 2 Order Forms OceanWP</p> <p>1.1.17: Added 1 Order Form OceanWP</p> <p>1.1.16: Added Pricing Table</p> <p>1.0.3: Added Home Order Form - OceanWP</p>",
 		"available_plugins": "<ol><li>Home Order Form 1 (OceanWP)</li> <li>Pricing Table 1</li> <li>Order Form 1 (OceanWP)</li> <li>Order Form 2 (OceanWP)</li> <li>Order Form 3 (OceanWP)</li></ul>"
 	},
 	
