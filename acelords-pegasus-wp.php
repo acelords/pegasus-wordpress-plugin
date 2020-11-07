@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.1.26');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.2');
 
 /**
  * The constructor, to initiate the widget
@@ -23,7 +23,7 @@ define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.1.26');
 function handle_shortcode($atts = '') {
     $args = shortcode_atts( 
         array(
-            'name' => 'oceanwp-home-order-form',
+            'name' => 'home-order-form-one-oceanwp',
         ), 
         $atts
     );
@@ -91,7 +91,6 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
             wp_enqueue_style( 'tailwind-css', plugin_dir_url( __FILE__ ) . 'public/css/tailwind.css', [], '1.9.5' );
             wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
         }
-
     });
 }
 
