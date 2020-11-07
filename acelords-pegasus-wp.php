@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.2');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.3');
 
 /**
  * The constructor, to initiate the widget
@@ -24,7 +24,7 @@ function handle_shortcode($atts = '') {
     $args = shortcode_atts( 
         array(
             'name' => 'home-order-form-one-oceanwp',
-        ), 
+        ),
         $atts
     );
 
@@ -63,7 +63,7 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
         $page_title = 'AceLords Pegasus WordPress Plugins';
         $menu_title = 'AceLords Pegasus';
         $capability = 'manage_options';
-        $menu_slug  = 'acelords-pegasus-wordpress-plugins';
+        $menu_slug  = 'acelords-pegasus-wp';
         $function   = 'acelords_pegasus_wordpress_plugins_page';
         $icon_url   = 'dashicons-nametag';
         $position   = 4;
@@ -101,5 +101,5 @@ require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'https://github.com/acelords/pegasus-wordpress-plugin/raw/master/plugin.json',
     __FILE__, // Full path to the main plugin file or functions.php.
-    'acelords-pegasus-wordpress-plugins'
+    'acelords-pegasus-wp'
 );
