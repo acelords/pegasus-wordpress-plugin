@@ -2,13 +2,13 @@
 /*
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
- * Description: WordPress Plugins for complementing AceLords' Project Pegasus 
+ * Description: WordPress Plugins for complementing AceLords' Project Pegasus
  * Version: 1.2.6
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.6');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.3.0');
 
 /**
  * The constructor, to initiate the widget
@@ -21,7 +21,7 @@ define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.2.6');
 
 // Register Shortcode
 function handle_shortcode($atts = '') {
-    $args = shortcode_atts( 
+    $args = shortcode_atts(
         array(
             'name' => 'home-order-form-one-oceanwp',
         ),
@@ -92,6 +92,22 @@ if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
             wp_enqueue_style( 'mdi-fonts-css', plugin_dir_url( __FILE__ ) . 'public/fonts/mdi/css/materialdesignicons.min.css', [], '5.0.45' );
         }
     });
+}
+
+
+/**
+ * Add menu entry on admin topbar
+ */
+add_action('admin_bar_menu', 'acelords_add_toolbar_items', 100);
+function acelords_add_toolbar_items($admin_bar) {
+    $admin_bar->add_menu( array(
+        'id'    => 'acelords-top-bar-entry',
+        'title' => 'AceLords Pegasus',
+        'href'  => admin_url( 'admin.php?page=acelords-pegasus-wp' ),
+        'meta'  => array(
+            'title' => __('AceLords Pegasus'),
+        ),
+    ));
 }
 
 /**
