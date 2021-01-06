@@ -8,7 +8,7 @@
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.3.0');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.3.1');
 
 /**
  * The constructor, to initiate the widget
