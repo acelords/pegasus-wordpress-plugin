@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus
- * Version: 1.3.7
+ * Version: 1.4.0
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.3.7');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.4.0');
 
 /**
  * The constructor, to initiate the widget
@@ -29,8 +29,16 @@ function handle_shortcode($atts = '') {
     );
 
     $name = esc_attr( $args['name'] );
+
+    $setValue = get_option( 'pegasus_setting_field' );
+    if(! $setValue || $setValue == "") {
+        $setValue = "https://app." . $_SERVER['SERVER_NAME'];
+    }
     
-    return '<div id="acelords-pegasus-plugin-' . $name . '"></div>';
+    return '
+        <script> var ACELORDS_PEGASUS_SYSTEM_URL = "' . $setValue . '";</script>
+        <div id="acelords-pegasus-plugin-' . $name . '"></div>
+    ';
 }
 add_shortcode('AceLordsPegasusPlugins', 'handle_shortcode');
 
@@ -56,7 +64,64 @@ add_action('wp_enqueue_scripts', 'acelords_pegasus_plugins_enqueue_scripts');
 if( ! function_exists("acelords_pegasus_wordpress_plugins_page") ) {
 
     function acelords_pegasus_wordpress_plugins_page($content) {
-        echo '<div id="acelords-pegasus-wordpress-plugins-admin"></div>';
+        ?>
+            <div class="tw-w-full" style="font-family: Prata,Roboto,serif;">
+                <h3 class="tw-text-3xl tw-text-gray-900 tw-text-center font-prata">AceLords Project-Pegasus WordPress Plugins</h3>
+                <p class="tw-text-center font-raleway">View and manage settings for AceLords plugins</p>
+            </div>
+
+            <form method="POST" action="options.php" class="tw-flex tw-flex-wrap"> 
+                <div class="">
+                    <?php settings_fields( 'pegasus_setting_field' ); ?>
+                </div>
+                <div class="tw-flex">
+                    <?php do_settings_sections( 'pegasus_setting_field' ); ?>
+                </div>
+                <div class="">
+                    <?php submit_button(); ?>
+                </div>
+            </form>
+
+            <div id="acelords-pegasus-wordpress-plugins-admin"></div>
+            
+        <?php
+    }
+
+    add_action( 'admin_init', 'pegasus_wordpress_settings_init' );
+
+    function pegasus_wordpress_settings_init() {
+
+        add_settings_section(
+            'pegasus_setting_section',
+            __( 'Pegasus System URL', 'pegasus-wordpress' ),
+            'pegasus_setting_section_callback_function',
+            'pegasus_setting_field'
+        );
+    
+        add_settings_field(
+            'pegasus_setting_field',
+            __( 'Pegasus System URL', 'pegasus-wordpress' ),
+            'pegasus_setting_markup',
+            'pegasus_setting_field',
+            'pegasus_setting_section'
+        );
+
+        register_setting( 'pegasus_setting_field', 'pegasus_setting_field' );
+    }
+    
+    function pegasus_setting_section_callback_function() {
+        echo '<p>Set the URL in which the plugins shall fetch their data.</p>';
+    }
+    
+    function pegasus_setting_markup() {
+        $setValue = get_option( 'pegasus_setting_field' );
+        if(! $setValue || $setValue == "") {
+            $setValue = "https://app." . $_SERVER['SERVER_NAME'];
+        }
+        ?>
+            <!-- <label for="pegasus_setting_field"><?php // _e( 'Pegasus System URL' ); ?></label> -->
+            <input type="url" id="pegasus_setting_field" placeholder="<?php echo $setValue; ?>" name="pegasus_setting_field" value="<?php echo $setValue; ?>" style="width: 100%;">
+        <?php
     }
 
     function acelords_pegasus_wordpress_plugins_menu() {
