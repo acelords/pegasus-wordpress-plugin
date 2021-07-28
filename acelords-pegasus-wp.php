@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus
- * Version: 1.4.2
+ * Version: 1.4.3
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.4.2');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.4.3');
 
 /**
  * The constructor, to initiate the widget
