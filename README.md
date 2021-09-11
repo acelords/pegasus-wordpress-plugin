@@ -17,7 +17,8 @@ AceLords Pegasus is a complete and complex freelancing-centered system aimed at 
 11. Order Page 7 (OceanWP)
 12. Order Page 8 (OceanWP)
 13. Order Page 9 (OceanWP)
-14. Samples 1 (Tailwind)
+14. Order Page 10 (OceanWP)
+15. Samples 1 (Tailwind)
 
 ## Installation
 For first time installs and activation, you need to contact the developers before. 
