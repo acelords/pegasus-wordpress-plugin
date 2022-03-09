@@ -22,8 +22,13 @@ AceLords Pegasus is a complete and complex freelancing-centered system aimed at 
 16. Samples 1 (Tailwind)
 17. Default Writers 1 (Tailwind)
 18. Contact Form 1 (Tailwind)
-19. Reviews 1 (Tailwind)
-20. Reviews 2 
+19. Contact Form 2 (Tailwind)
+20. Reviews 1 (Tailwind)
+21. Reviews 2 
+22. Reviews 3 
+23. Reviews 4 
+24. Reviews 5 
+25. Reviews 6 
 
 ## Installation
 For first time installs and activation, you need to contact the developers before. 
