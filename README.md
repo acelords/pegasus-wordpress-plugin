@@ -48,11 +48,11 @@ To harmonize with the website theme colors, the following classes shall be appli
   - (--e-global-color-primary) - For elementor-enabled sites
 
 ## Contributing
-- [AceLords](https://www.acelords.space)
+- [AceLords](https://www.acelords.com)
 
 ## License
 - AceLords Proprietary License
 
 ## Report Bugs
-- [AceLords Support Mail](mailto:support@acelords.space)
-- [AceLords Business Mail](mailto:info@acelords.space)
+- [AceLords Support Mail](mailto:support@acelords.com)
+- [AceLords Business Mail](mailto:info@acelords.com)
