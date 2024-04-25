@@ -8,30 +8,31 @@ AceLords Pegasus is a complete and complex freelancing-centered system aimed at 
 2. Home Page Order 2 (TailWind)
 3. Home Page Order 3 (OceanWP)
 4. Pricing Table 1 (TailWind)
-5. Order Page 1 (OceanWP)
-6. Order Page 2 (OceanWP)
-7. Order Page 3 (OceanWP)
-8. Order Page 4 (OceanWP)
-9. Order Page 5 (OceanWP)
-10. Order Page 6 (OceanWP)
-11. Order Page 7 (OceanWP)
-12. Order Page 8 (OceanWP)
-13. Order Page 9 (OceanWP)
-14. Order Page 10 (OceanWP)
-15. Order Page 11 (OceanWP)
-16. Order Page 12 (OceanWP)
-17. Order Page 13 (OceanWP)
-18. Order Page 14
-19. Samples 1 (Tailwind)
-20. Default Writers 1 (Tailwind)
-21. Contact Form 1 (Tailwind)
-22. Contact Form 2 (Tailwind)
-23. Reviews 1 (Tailwind)
-24. Reviews 2 
-25. Reviews 3 
-26. Reviews 4 
-27. Reviews 5 
-28. Reviews 6 
+5. Pricing Table 2 (TailWind)
+6. Order Page 1 (OceanWP)
+7. Order Page 2 (OceanWP)
+8. Order Page 3 (OceanWP)
+9. Order Page 4 (OceanWP)
+10. Order Page 5 (OceanWP)
+11. Order Page 6 (OceanWP)
+12. Order Page 7 (OceanWP)
+13. Order Page 8 (OceanWP)
+14. Order Page 9 (OceanWP)
+15. Order Page 10 (OceanWP)
+16. Order Page 11 (OceanWP)
+17. Order Page 12 (OceanWP)
+18. Order Page 13 (OceanWP)
+19. Order Page 14
+20. Samples 1 (Tailwind)
+21. Default Writers 1 (Tailwind)
+22. Contact Form 1 (Tailwind)
+23. Contact Form 2 (Tailwind)
+24. Reviews 1 (Tailwind)
+25. Reviews 2 
+26. Reviews 3 
+27. Reviews 4 
+28. Reviews 5 
+29. Reviews 6 
 
 ## Installation
 For first time installs and activation, you need to contact the developers before. 
@@ -48,11 +49,11 @@ To harmonize with the website theme colors, the following classes shall be appli
   - (--e-global-color-primary) - For elementor-enabled sites
 
 ## Contributing
-- [AceLords](https://www.acelords.com)
+- [AceLords](https://www.acelords.space)
 
 ## License
 - AceLords Proprietary License
 
 ## Report Bugs
-- [AceLords Support Mail](mailto:support@acelords.com)
-- [AceLords Business Mail](mailto:info@acelords.com)
+- [AceLords Support Mail](mailto:support@acelords.space)
+- [AceLords Business Mail](mailto:info@acelords.space)

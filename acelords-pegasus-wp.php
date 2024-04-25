@@ -3,12 +3,12 @@
  * Plugin Name: AceLords Project Pegasus WordPress Plugins
  * Plugin URI: https://github.com/acelords/pegasus-wordpress-plugin
  * Description: WordPress Plugins for complementing AceLords' Project Pegasus
- * Version: 1.6.11
+ * Version: 1.7.0
  * Author: AceLords
  * Author URI: https://www.acelords.space
  */
 
-define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.6.11');
+define('ACELORDS_PEGASUS_WP_PLUGINS_VERSION', '1.7.0');
 
 /**
  * The constructor, to initiate the widget
@@ -179,8 +179,8 @@ function acelords_add_toolbar_items($admin_bar) {
  * plugin updater
  */
 require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/acelords/pegasus-wordpress-plugin/raw/master/plugin.json',
+$myUpdateChecker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+    'https://github.com/acelords/pegasus-wordpress-plugin/raw/main/plugin.json',
     __FILE__, // Full path to the main plugin file or functions.php.
     'acelords-pegasus-wp'
 );
